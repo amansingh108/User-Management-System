@@ -1,0 +1,52 @@
+<!-- including header -->
+<%- include('include/_header')%>
+
+
+<!-- main section -->
+     <main id="site-main">
+         <div class="container">
+             <div class="_user">
+                 <a href="/adduser" class="border-shadow">
+                    <span class="new_user_span">New User <i class="fas fa-user"></i></span>
+                </a>
+             </div>
+             <!-- form handling -->
+             <form action="/" method="POST" class="usm_form">
+                <table class="table">
+                    <thead class="thead">
+                        <tr class="table_row">
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>@Email</th>
+                            <th>Gender</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+                    <% for(var i=0;i< users.length; i++) { %>
+                        <tr class="table_row">
+                            <td><%= i+1 %></td>
+                            <td><%= users[i].name %></td>
+                            <td><%= users[i].email %></td>
+                            <td><%= users[i].gender %></td>
+                            <td><%= users[i].status %></td>
+                            <td>
+                                <a href="/updateuser?id=<%=users[i]._id%>" id="edit_btn">
+                                    <span class="text-gradient"><i class="fas fa-edit"></i></span>
+                                </a>
+                                <a href="/deleteuser?id=<%=users[i]._id%>" id="del_btn">
+                                    <span class="text-gradient"><i class="fas fa-times"></i></span>
+                                </a>
+                            </td>
+                        </tr>
+                    <% } %>
+                    </tbody>
+                </table>
+            </form>
+                
+         </div>
+     </main>
+
+<!-- including footer -->
+<%- include('include/_footer')%>

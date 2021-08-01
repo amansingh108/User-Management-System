@@ -1,0 +1,162 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
+/* font-family: 'Lora', serif; */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Nunito&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+
+/* header file */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header .h_container{
+    height: 66px;
+    width: 100%;
+    background-color: rgb(65, 203, 207);
+    padding-top: 21px;
+}
+
+.usm{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.usm a{
+    text-decoration: none;
+    color: black;
+}
+/* header file */
+
+/* index.ejs file */
+main{
+    font-family: 'Nunito','Lora', serif;
+    text-align: center;
+    background-color: rgb(170, 232, 235);
+}
+
+.container{
+    background: rgb(170, 232, 235);
+    display: inline-block;
+    width: 60%;
+}
+
+.new_user{
+    display: inline-block;
+    background-color: white;
+    margin: 20px;
+    padding: 8px;
+    border-radius: 10px;
+}
+.new_user:hover{
+    cursor: pointer;
+    background-color: rgb(180, 176, 176);
+}
+
+.new_user a{
+    text-decoration: none;
+    color: black;
+}
+.table{
+    text-align:justify;
+    background-color: cornsilk;
+    width: 100%;
+    margin-bottom: 300px;
+}
+
+.table_row{
+    height: 46px;
+}
+
+.table_row:hover{
+    background-color: rgb(65, 203, 207);
+}
+
+.thead {
+    background-color: blue;
+}
+
+.tbody {
+    background-color: rgb(177, 174, 174);
+}
+
+th, td {
+    padding-left: 10px;
+}
+
+#edit_btn{
+    padding-right: 5px;
+    color: black;
+}
+
+#del_btn{
+    padding-left: 25px;
+    color: black;
+}
+/* index.ejs file */
+
+/* adduser and update user file */
+
+._user {
+    background-color: white;
+    display: inline-block;
+    margin: 7px;
+    padding: 8px;
+    border-radius: 18px;
+}
+.user-form{
+    margin-bottom: 400px;
+    text-align: left;
+}
+.form-div{
+    background-color: rgb(190, 142, 235);
+    border-radius: 7px;
+}
+
+.for_group{
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+}
+.radio_inline{
+    display: inline;
+}
+
+.form-div label{
+    padding-right: 30px;
+}
+
+
+.text {
+    height: 30px;
+    width: 400px;
+    border: 2px solid #dadada;
+    border-radius: 7px;
+}
+
+.text:focus { 
+    outline: none;
+    border-color: #7db1db;
+    box-shadow: 0 0 10px #7aa6ca;
+}
+
+.submit_btn{
+    background-color: lightblue;
+    height: 28px;
+    width: 54px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 1px;
+}
+
+.submit_btn:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+/* adduser and update user file */
+

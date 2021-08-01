@@ -1,0 +1,15 @@
+<!-- including header -->
+<%- include('include/_header')%>
+
+    <form action='/api/users/<%=user._id%>?_method=DELETE' method="POST" id="update-user-form">
+     <input type="hidden" name="_method" value="DELETE">
+    <h3>Do you really want to delete this user?</h3>
+    <button type="submit">Yes</button>
+    </form>
+
+    <form action='/' method="GET" id="update-user-form">
+    <button type="submit">No</button>
+    </form>
+
+<!-- including footer -->
+<%- include('include/_footer')%>

@@ -1,0 +1,58 @@
+<!-- including header -->
+<%- include('include/_header')%>
+
+  <!-- main section -->
+     <main id="site-main">
+         <div class="container">
+             <div class="_user">
+                 <a href="/" class="all_user"><i class="fas fa-angle-double-left"></i></i>All Users</a>
+             </div>
+
+             <h3 class="new_user_heading">Add new user here</h3>
+             <!-- form handling -->
+             <form action='/api/users' method="POST" class="user-form">
+                <div class="form-div">
+                    <div class="for_group">
+                        <label for="name">Names</label>
+                        <input type="hidden" name="id" value="">
+                        <input class="text" type="text" name="name" value="" placeholder="Aman Singh">
+                    </div>
+                    <div class="for_group">
+                        <label for="email">Email</label>
+                        <input class="text" type="email" name="email" value="" placeholder="example@gmail.com">
+                    </div>
+                    <div class="for_group">
+                        <label for="gender">Gender</label>
+                        <div class="radio_inline">
+                            <input type="radio" name="gender" value="Male">
+                            <label for="gender" class="radio_input">Male</label>
+                        </div>
+
+                        <div class="radio_inline">
+                            <input type="radio" name="gender" value="Female">
+                            <label for="gender" class="radio_input">Female</label>
+                        </div>
+                     </div>
+                    <div class="for_group">
+                     <label for="status">Status</label>
+                        <div class="radio_inline">
+                            <input type="radio" name="status" value="Active">
+                            <label for="status" class="radio_input">Active</label>
+                        </div>
+
+                        <div class="radio_inline">
+                            <input type="radio" name="status" value="Inactive">
+                            <label for="status" class="radio_input">Inactive</label>
+                        </div>
+                     </div>
+
+                     <div class="for_group">
+                         <button type="submit" class="submit_btn">Save</button>
+                    </div>
+                </div>
+            </form>
+         </div>
+     </main>
+
+<!-- including footer -->
+<%- include('include/_footer')%>
