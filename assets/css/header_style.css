@@ -8,8 +8,8 @@
 
 /* header file */
 *{
-    padding: 0;
-    margin: 0;
+    padding: 1rem;
+    margin: 1rem;
     box-sizing: border-box;
 }
 
@@ -158,5 +158,3 @@ th, td {
     background-color: blue;
     cursor: pointer;
 }
-/* adduser and update user file */
-
